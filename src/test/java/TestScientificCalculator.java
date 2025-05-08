@@ -32,6 +32,10 @@ public class TestScientificCalculator {
     public void testSquareRootNegative(){
         assertEquals(5, sc.squareRoot(-25));
     }
+    @Test
+    public void testDivideByZero(){
+        assertEquals(5, sc.divide(25, 0));
+    }
 //    @Test public void testDivide() {
 //        assertEquals(1, sc.divide(5, 5));
 //    }
